@@ -1,0 +1,154 @@
+\documentclass[t, 11pt]{beamer}
+\pdfmapfile{+sansmathaccent.map}
+%%% Работа с русским языком
+\usepackage{cmap}				
+\usepackage{mathtext} 				
+\usepackage[T2A]{fontenc}		
+\usepackage[utf8]{inputenc}			
+\usepackage[english,russian]{babel}	
+
+\usetheme{Ilmenau}
+\usecolortheme{lily} % Цветовая схема
+
+
+
+%%% Работа с картинками
+\usepackage{graphicx}
+
+\usepackage{csquotes}
+
+\hypersetup{				
+	colorlinks=true,       	
+	linkcolor=blue,          
+	citecolor=black,       
+	filecolor=magenta,      
+	urlcolor=red           
+}
+
+
+\title{NLP intro}
+\subtitle{...and it's applications}
+\author{Чувакин Сергей}
+\date{\today}
+\institute[<<Анализ больших данных в бизнесе, экономике и обществе>>]{<<Высшая школа экономики>>}
+
+\begin{document}
+	\frame[plain]{\titlepage}
+	\section{Outline}
+	
+	\begin{frame}
+		\frametitle{\insertsection} 
+		\begin{block} {}
+			 
+			\hyperlink{hist}{\beamerbutton{Breif history}}
+		\end{block}
+		\begin{block}{}
+			\hyperlink{steps}{\beamerbutton{Steps for processing}}
+		\end{block}
+		\begin{block}{}
+			\hyperlink{lm}{\beamerbutton{Language models}}
+		\end{block}
+		\begin{block}{}
+			\hyperlink{sents}{\beamerbutton{Sintiments and topics}}
+		\end{block}
+			\begin{block}{}
+		\hyperlink{chatbots}{\beamerbutton{Chatbots}}
+		\end{block}
+	\end{frame}
+	
+	\subsection{NLP per se}
+	\begin{frame} \label {hist}
+		\frametitle{\insertsection} 
+		\frametitle{\insertsubsection} 
+		\begin{itemize}
+			\item 1900s Saussure
+			\item 1950s Turing 
+			\item 1957s Chomsky
+			\item 1966 - 1980ss ai winter
+			\item 1990s $\sim$ n-grams, lstm, language models, etc.
+		\end{itemize}
+	\end{frame}
+	\subsection{NLP tasks} \label{}
+	
+	\begin{frame}
+		\frametitle{\insertsection}
+		\frametitle{\insertsubsection}  
+	\begin{itemize}
+    \item \textbf{Content Categorization:} A linguistic document summary that includes content alerts, duplication detection, search, and indexing.
+	\item \textbf{Topic Discovery and Modeling:} Captures the themes and meanings of text collections, and applies advanced analytics to the text.
+	\item \textbf{Contextual Extraction:} Automatically pulls structured data from text-based sources.
+	\item \textbf{Sentiment Analysis:} Identifies the general mood, or subjective opinions, stored in large amounts of text. Useful for opinion mining.
+	\vspace{1cm}
+ 	\href{https://www.dataversity.net/a-brief-history-of-natural-language-processing-nlp/}{click here}.
+ \end{itemize}
+	\end{frame}
+
+	\begin{frame}
+	\frametitle{\insertsection}
+	\frametitle{\insertsubsection}  
+	\begin{itemize}
+
+		\item \textbf{Text-to-Speech and Speech-to-Text Conversion:} Transforms voice commands into text, and vice versa.
+		\item \textbf{Document Summarization:} Automatically creates a synopsis, condensing large amounts of text.
+		\item \textbf{Machine Translation:} Automatically translates the text or speech of one language into another.
+		
+		\vspace{1cm}
+		\href{https://www.dataversity.net/a-brief-history-of-natural-language-processing-nlp/}{click here}
+	\end{itemize}
+\end{frame}
+
+
+	\subsection{Processing steps}
+
+\begin{frame}\label{steps}
+	\frametitle{\insertsection}
+	\frametitle{\insertsubsection}
+	\begin{itemize}
+		\item data obtaining 
+		\item stemming\textbackslash lemmatization
+		\item vectorization (bow, tf-idf, word2vec) 
+		\item modeling 
+	\end{itemize}
+\end{frame}
+
+	
+	\subsection{Language models}
+	
+	\begin{frame}\label{lm}
+		\frametitle{\insertsection}
+		\frametitle{\insertsubsection}
+		Probability of word given the previous.
+		\begin{itemize}
+			\item Probabilistic models 
+			\item RNN, LSTM 
+			\item word2vec 
+			
+			\vspace{1cm}
+		\end{itemize}
+	\end{frame}
+	
+	\subsection{Sintiments and topics}
+	\begin{frame}\label{sents}
+		\frametitle{\insertsection}
+		\frametitle{\insertsubsection}
+		\begin{itemize}
+			\item Text classification.
+			\item Recommendation Systems.
+			\item Uncovering Themes in Texts. 
+		\end{itemize}
+	\end{frame}
+
+		\subsection{Chatbots}
+	\begin{frame}\label{chatbots}
+		\frametitle{\insertsection}
+		\frametitle{\insertsubsection}
+		\begin{itemize}
+			\item Goal-oriented (FAQ bot).
+			\item Convesational (Алиса, Siri).
+			\item NLU + text generation. 
+		\end{itemize}
+	\end{frame}
+
+	
+	
+\end{document}
