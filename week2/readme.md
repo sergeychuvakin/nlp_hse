@@ -12,3 +12,4 @@
 - [gensim](https://radimrehurek.com/gensim/tut1.html#from-strings-to-vectors) ["for humans"](https://webdevblog.ru/gensim-rukovodstvo-dlya-nachinajushhih/) <br>
 - [sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html) <br>
 - [pymystem](https://pypi.org/project/pymystem3/)
+- [NLTK](https://www.nltk.org/)
