@@ -1,12 +1,14 @@
-# preprocessing 
-
--BOW
--lemmatization 
--stemming 
--tfidf
--word2vec(optional)
+# preprocessing
+----
+<br>
+- BOW <br>
+- lemmatization <br> 
+- stemming <br>
+- tfidf <br>
+- n-grams <br>
+- word2vec(optional) <br>
 
 ### requirements (python3)
--gensim
--sklearn
+-(gensim)[https://radimrehurek.com/gensim/tut1.html#from-strings-to-vectors] <br>
+-sklearn <br>
 -pymystem
