@@ -9,6 +9,6 @@
 - word2vec(optional) <br>
 
 ### requirements (python3)
--(gensim)[https://radimrehurek.com/gensim/tut1.html#from-strings-to-vectors] <br>
--sklearn <br>
--pymystem
+- [gensim](https://radimrehurek.com/gensim/tut1.html#from-strings-to-vectors) [<<for humans>>](https://webdevblog.ru/gensim-rukovodstvo-dlya-nachinajushhih/) <br>
+- sklearn <br>
+- pymystem
